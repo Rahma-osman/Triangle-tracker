@@ -1,5 +1,10 @@
+body{
+  text-align: center;
+}
+
 .styler{
-  padding-left:17%;
+  margin: 15px;
+  margin-top: 0;
   padding-top: 7%;
   margin-bottom: 15px;
   background-color: #9b0000;
