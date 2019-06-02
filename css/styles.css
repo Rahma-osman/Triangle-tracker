@@ -1,3 +1,11 @@
+.styler{
+  padding-left:17%;
+  padding-top: 7%;
+  margin-bottom: 15px;
+  background-color: #9b0000;
+  border-radius: 0.5rem;
+}
+
 .image{
   max-width: 100%;
   max-height: 400px;
