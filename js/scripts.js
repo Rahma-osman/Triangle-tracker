@@ -4,7 +4,10 @@ function solve() {
   var dime3 = parseFloat(document.getElementById("dimension3").value);
 
   var arr = [dime1, dime2, dime3];
-  if ((arr[0] + arr[1]) < arr[2] || (arr[0] + arr[2]) < arr[1] || (arr[1] + arr[2]) < arr[0]) {
+  if (!(arr[0]) || !(arr[1]) || !(arr[2])) {
+    document.getElementById("img").src = "image/img.gif";
+    document.getElementById("name").innerHTML = "Please input dimensions";
+  } else if ((arr[0] + arr[1]) < arr[2] || (arr[0] + arr[2]) < arr[1] || (arr[1] + arr[2]) < arr[0]) {
     document.getElementById("img").src = "image/img.gif";
     document.getElementById("name").innerHTML = "Not a triangle";
   } else if ((arr[0] === arr[1] && arr[1] !== arr[2]) || (arr[0] === arr[2] && arr[2] !== arr[1]) || (arr[1] === arr[2] && arr[2] !== arr[0])) {
